@@ -16,7 +16,7 @@ function draw(){
         for(i=0;i<objects.length;i++){
             document.getElementById("status").innerHTML="Status=Objects Detected";
             fill("Red");
-            percent=floor(objects[i].cofidence*100);
+            percent=floor(objects[i].confidence*100);
             text(objects[i].label+" "+percent+"%",objects[i].x+15,objects[i].y+15);
             noFill();
             stroke("blue");
